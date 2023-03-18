@@ -17,5 +17,8 @@ you sholud pass the objectID (string) wich you can find in each article returned
 	docker-compose up
 
 4. The database scripts are automatically executed when you run the docker-compose up command.
+5. You can find the token for get access to the services in the sql file
 
-Thank you.
+	TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huLmRvZUBnbWFpbC5jb20iLCJleHAiOjE5NjAzMDk3NzgyNzI1MjIsIm5hbWUiOiJKb2huIERvZSJ9.ALX-E6tdxo_SNNR4FtrR1syeiUNyaafwtRtZzZ9iJ-k
+	
+# Thank you.
