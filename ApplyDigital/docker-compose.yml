@@ -1,0 +1,24 @@
+version: '3'
+services:
+    article-app:
+        container_name: article-app
+        image: kmilo21/articleservice
+        restart: on-failure
+        ports: 
+            - 8080:8080
+        environment: 
+            WAIT_HOSTS: postgres:5432
+        depends_on: 
+            - docker-postgres 
+    docker-postgres:
+        container_name: docker-postgres
+        image: postgres
+        restart: always
+        environment:
+            POSTGRES_DB: javatestdb
+            POSTGRES_USER: tester
+            POSTGRES_PASSWORD: challenge23
+        volumes:
+            - ./sql:/docker-entrypoint-initdb.d
+        ports:
+            - 5432:5432
